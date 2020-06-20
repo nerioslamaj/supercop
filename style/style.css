@@ -26,7 +26,7 @@
 }
 
 body {
-  background-color: #fee9ff;
+  background-color: #fee9ff !important;
 }
 
 p {
