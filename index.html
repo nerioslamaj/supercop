@@ -1,0 +1,179 @@
+<html>
+	<head>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+		<title>SuperCop Plugin</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script type="text/javascript" src="script.js"></script>
+	</head>
+	<body>
+		<div class="main-wrapper">
+      <img class="logo" src="style/images/logo.svg" alt="SuperCop Logo">
+			<div id="sizes">
+				<label for="sm">
+					<input type="radio" name="size" id="sm" value="sm"/>
+					<div><p>SM</p></div>
+				</label>
+				<label for="md">
+					<input type="radio" name="size" id="md" value="md" checked/>
+					<div><p>MD</p></div>
+				</label>
+				<label for="lg">
+					<input type="radio" name="size" id="lg" value="lg" />
+					<div><p>LG</p></div>
+				</label>
+				<label for="xl">
+					<input type="radio" name="size" id="xl" value="xl" />
+					<div><p>XL</p></div>
+				</label>
+			</div>
+
+			<div id="hatshoe" class="drop">
+				<select>
+					<option value="none" disabled selected>Shoe Size</option>
+					<option value="6">6.5 </option>
+					<option value="7">7 </option>
+					<option value="7.5">7.5 </option>
+					<option value="8">8 </option>
+					<option value="8.5">8.5 </option>
+					<option value="9">9 </option>
+					<option value="9.5">9.5 </option>
+					<option value="10">10 </option>
+					<option value="10.5">10.5 </option>
+					<option value="11">11 </option>
+					<option value="11.5">11.5 </option>
+					<option value="12">12 </option>
+					<option value="12.5">12.5 </option>
+					<option value="13">13 </option>
+					<option value="13.5">13.5 </option>
+					<option value="14">14 </option>
+					<option value="US 8 / UK 7">US 8 / UK 7 </option>
+					<option value="US 8.5 / UK 7.5">US 8.5 / UK 7.5 </option>
+					<option value="US 9 / UK 8">US 9 / UK 8 </option>
+					<option value="US 9.5 / UK 8.5">US 9.5 / UK 8.5 </option>
+					<option value="US 10 / UK 9">US 10 / UK 9 </option>
+					<option value="US 10.5 / UK 9.5">US 10.5 / UK 9.5 </option>
+					<option value="US 11 / UK 10<">US 11 / UK 10 </option>
+					<option value="US 11.5 / UK 10.5">US 11.5 / UK 10.5 </option>
+					<option value="US 12 / UK 11">US 12 / UK 11 </option>
+					<option value="US 13 / UK 13">US 13 / UK 12 </option>
+				</select>
+
+				<select>
+					<option value="none" disabled selected>Hat Size</option>
+					<option value="OS">OS </option>
+					<option value="7 1/8">7 1/8 </option>
+					<option value="7 1/4">7 1/4 </option>
+					<option value="7 3/8">7 3/8 </option>
+					<option value="7 1/2">7 1/2 </option>
+					<option value="7 5/8">7 5/8 </option>
+					<option value="7 3/4">7 3/4 </option>
+					<option value="S/M">S/M </option>
+					<option value="M/L">M/L </option>
+					<option value="M/L">L/XL </option>
+				</select>
+			</div>
+
+			<div class="keyword">
+				<input type="checkbox" name="checkbox" id="keywordON" value="value">
+				<label class="title" for="keywordON">Keyword Finder</label>
+				<div class="interval">
+					<p>Refresh Interval</p>
+					<input type="number" name="interval" placeholder="00" id="waiting-time">
+				</div>
+
+				<div id="time">
+					<label for="sec">
+						<input type="radio" name="time" id="sec" value="sec" checked/>
+						<div><p>Sec</p></div>
+					</label>
+					<label for="min">
+						<input type="radio" name="time" id="min" value="min"/>
+						<div><p>Min</p></div>
+					</label>
+				</div>
+				<div class="list">
+					<div class="drop">
+						<select id="category" >
+							<option value="" disabled selected>Category</option>
+							<option value="Jackets">Jackets</option>
+							<option value="Shirts">Shirts</option>
+							<option value="Shoes">Shoes</option>
+							<option value="T-Shirts">T-Shirts</option>
+							<option value="Top-Sweaters">Top Sweaters</option>
+							<option value="Sweatshirts">Sweatshirts</option>
+							<option value="Pants">Pants</option>
+							<option value="Shorts">Shorts</option>
+							<option value="Hats">Hats</option>
+							<option value="Bags">Bags</option>
+							<option value="Accesories">Accesories</option>
+							<option value="Skate">Skate</option>
+						</select>
+						<div class="inputKeyword">
+							<input type="text" placeholder="Keyword" value="" id="keyword"/>
+							<button type="submit" onclick="addToWord()"><i class="fa fa-check fa-lg"></i></button>
+						</div>
+						<div id="chosenWord"></div>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="delay-timer">
+				<input type="checkbox" name="checkbox" id="delaytimerON" value="value">
+				<label class="title" for="delaytimerON">Checkout Dealy & Timer</label>
+				<div class="delay">
+					<p>Delay Seconds</p>
+					<input type="number" name="interval" placeholder="00" id="waiting-time">
+				</div>
+				<div class="timer">
+					<p>Timer</p>
+					<input type="time" name="interval" placeholder="00" id="waiting-time">
+				</div>
+			</div>
+
+			<div class="action">
+				<div id="action">
+					<label for="any-size">
+						<input type="checkbox" name="action" id="any-size" value="any-size"/>
+						<div><p>Any Size</p></div>
+					</label>
+					<label for="add-to-card">
+						<input type="checkbox" name="action" id="add-to-card" value="add-to-card"/>
+						<div><p>Add to Card</p></div>
+					</label>
+					<label for="checkout">
+						<input type="checkbox" name="action" id="checkout" value="checkout" />
+						<div><p>Checkout</p></div>
+					</label>
+				</div>
+				<button class="save-preset" type="button" name="save">SAVE PRESETS</button>
+				<button class="options" type="button" name="menu"><img src="style/images/menu.svg" alt=""></button>
+				<button class="logout" type="button" name="logout"><img src="style/images/logout.svg" alt=""></button>
+			</div>
+
+
+		</div>
+	</body>
+	<script type="text/javascript">
+		let wordList = [];
+		const close = "&times;";
+		const iterableListFor = list => {
+			let newKeyword = "";
+			for (let [index, word] of list.entries()) {
+				newKeyword += `<div><p>${word}</p><button onClick='removeWord(${index});'><i class="fa fa-close fa-lg"></i></button></div>`;
+			}
+			document.getElementById("chosenWord").innerHTML = newKeyword;
+		};
+		const addToWord = e => {
+			const addWord = document.getElementById("category").value +" — "+document.getElementById("keyword").value;
+			wordList.push(addWord);
+			iterableListFor(wordList);
+		};
+		const removeWord = wordIndex => {
+			wordList.splice(wordIndex, 1);
+			iterableListFor(wordList);
+		};
+	</script>
+</html>

@@ -1,0 +1,474 @@
+/*----- FONTS AND PRESETES -----*/
+
+@font-face {
+    font-family: RobotoR;
+    src: url(fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: RobotoM;
+    src: url(fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: RobotoMI;
+    src: url(fonts/Roboto-MediumItalic.ttf);
+}
+
+@font-face {
+    font-family: RobotoB;
+    src: url(fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: RobotoBL;
+    src: url(fonts/Roboto-Black.ttf);
+}
+
+p {
+  font-family: 'RobotoR';
+  font-size: 12px;
+  line-height: normal;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/*----- MAIN PLUGIN BOX -----*/
+
+.main-wrapper {
+  width: 360px;
+  min-height: 400px;
+  background-color: #111;
+  padding: 30px;
+  margin: 30px auto;
+}
+
+.main-wrapper .logo {
+  width: 100%;
+  margin-bottom: 28px;
+}
+
+
+
+/*----- CLOTH SIZES - RADIO BUTTONS -----*/
+
+.main-wrapper #sizes {
+  margin-bottom: 10px;
+}
+
+label {
+	cursor: pointer;
+	position: relative;
+  width: 22%;
+  height: 26px;
+  margin-right: 2.7%;
+}
+
+label:last-child {
+  margin-right: 0;
+}
+
+input[type="radio"] {
+	opacity: 0;
+	position: absolute;
+	cursor: pointer;
+}
+
+input[type="radio"] + div {
+	color: #ccc;
+  width: 100%;
+  height: 100%;
+  padding-top: 4px;
+  background-color: #444;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+}
+
+input[type="radio"] + div p {
+  text-align: center;
+}
+
+input[type="radio"]:checked + div {
+  background-color: #fc2b41;
+}
+
+input[type="radio"]:checked + div p {
+	color: #111;
+  font-family: 'RobotoBL';
+}
+
+input[type="radio"]:focus + div {
+	color: #111;
+}
+
+
+
+/*----- HAT & SHOE SIZES - LIST OPTIONS -----*/
+
+#hatshoe {
+  margin-bottom: 8px;
+}
+
+select {
+  width: 48%;
+  background: transparent;
+  margin-right: 2.6%;
+  padding: 0;
+  border: none;
+  color: #fc2b41 !important;
+  font-size: 12px !important;
+  font-family: 'RobotoM' !important;
+  border-bottom: 1px solid #444;
+}
+
+.drop select:last-child {
+  margin-right: 0;
+}
+
+.drop select option:first-child {
+  color: #aaa !important;
+}
+
+select option {
+  color: #444;
+  background: transparent;
+}
+
+
+
+/*----- KEYWORD FINDER - TITLE -----*/
+
+
+
+.keyword label.title, .delay-timer label.title {
+  width: 100%;
+  margin: 0 0 24px 0;
+  border-bottom: 1px solid #222;
+  color: #fc2b41;
+  font-family: 'RobotoMI';
+  font-size: 16px;
+  font-weight: normal;
+  padding: 2px 0 0 0;
+  transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+}
+
+.keyword label.title:hover, .delay-timer label.title:hover {
+  background-color: #222;
+  transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+}
+
+.keyword input#keywordON, .delay-timer input#delaytimerON {
+  visibility: hidden;
+  height: 0;
+}
+
+.keyword .interval {
+  float: left;
+  width: 48%;
+  border-bottom: 1px solid #444;
+  height: 17px;
+  margin-top: 4px;
+}
+
+.keyword .interval p {
+  color: #959595;
+  font-family: 'RobotoR';
+  font-size: 12px;
+  line-height: normal;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+.keyword .interval input {
+  width: 36px;
+  border: none;
+  height: 16px;
+  background: transparent;
+  color: #fc2b41;
+  font-family: 'RobotoM';
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: normal;
+  float: right;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+}
+
+.keyword .interval input[type=number]::-webkit-inner-spin-button,
+.keyword .interval input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+.keyword #time {
+  float: right;
+  width: 48%;
+  padding: 0;
+}
+
+#time label {
+  width: 46%;
+  margin-right: 5.2%;
+}
+
+#time label:last-child {
+  width: 46%;
+  margin-right: 0;
+}
+
+.list {
+  margin-top: 58px;
+}
+
+.inputKeyword {
+  display: inline;
+  border-bottom: 1px solid #444;
+  padding: 0 8px 1px 0;
+  margin: 0;
+  margin-left: 2.2%;
+}
+
+.list .drop input {
+  width: 39%;
+  margin-right: 0;
+  margin-left: 0;
+  background: transparent;
+  border: none;
+  color: #fc2b41;
+  font-family: 'RobotoM';
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: normal;
+}
+
+.list .drop input::placeholder {
+  color: #fc2b41;
+}
+
+.list .drop button {
+  background: transparent;
+  color: #444;
+  border: none;
+  width: 8%;
+  transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+}
+
+.list .drop button:hover {
+  color: #fc2b41;
+}
+
+#chosenWord {
+  text-align: justify;
+  margin-top: 14px;
+}
+
+#chosenWord div {
+  margin-top: 10px
+}
+
+.list .drop #chosenWord p {
+  color: #999;
+  display: inline;
+}
+
+.list .drop #chosenWord button {
+  float: right;
+  display: inline;
+}
+
+.list .drop #chosenWord button:hover {
+  color: #fc2b41;
+}
+
+
+
+
+/*----- DELAY & TIMER -----*/
+
+.delay-timer .delay, .delay-timer .timer {
+  float: left;
+  width: 48%;
+  border-bottom: 1px solid #444;
+  height: 17px;
+  margin-top: 4px;
+}
+
+.delay-timer .delay p, .delay-timer .timer p {
+  color: #959595;
+  font-family: 'RobotoR';
+  font-size: 12px;
+  line-height: normal;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+.delay-timer .delay input, .delay-timer .timer input {
+  width: 36px;
+  border: none;
+  height: 16px;
+  background: transparent;
+  color: #fc2b41;
+  font-family: 'RobotoM';
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: normal;
+  float: right;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+}
+
+.delay-timer .timer {
+  margin-left: 4%;
+}
+
+.delay-timer .delay input[type=number]::-webkit-inner-spin-button,
+.delay-timer .delay input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+.delay-timer .timer input[type=time]::-webkit-inner-spin-button,
+.delay-timer .timer input[type=time]::-webkit-outer-spin-button,
+.delay-timer .timer input[type="time"]::-webkit-clear-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+
+
+
+.action {
+  margin-top: 90px;
+}
+
+.action label {
+  width: 30.67%;
+}
+
+.action input[type="checkbox"] {
+	opacity: 0;
+	position: absolute;
+	cursor: pointer;
+}
+
+.action input[type="checkbox"] + div {
+	color: #ccc;
+  width: 100%;
+  height: 100%;
+  padding-top: 4px;
+  background-color: #444;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+}
+
+.action input[type="checkbox"] + div p {
+  text-align: center;
+}
+
+.action input[type="checkbox"]:checked + div {
+  background-color: #fc2b41;
+}
+
+.action input[type="checkbox"]:checked + div p {
+	color: #111;
+  font-family: 'RobotoBL';
+}
+
+.action button {
+  background: transparent;
+  border: none;
+}
+
+.action .save-preset {
+  width: 65.2%;
+  background: #fc2b41;
+  height: 26px;
+  margin-top: 7px;
+  color: #111;
+  font-family: 'RobotoBL';
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: normal;
+  letter-spacing: 2px;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+}
+
+.action .save-preset:hover {
+  background: #f66;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+}
+
+.action .options {
+  margin-left: 37px;
+  padding: 0;
+}
+
+.action .logout {
+  margin-left: 20px;
+  padding: 0;
+}
+
+
+
+
+
+
+
+.keyword > #keywordON:checked ~ .interval,
+.keyword > #keywordON:checked ~ #time,
+.keyword > #keywordON:checked ~ .list,
+.delay-timer > #delaytimerON:checked ~ .delay,
+.delay-timer > #delaytimerON:checked ~ .timer {
+  opacity: 0;
+  transition: all 0.2s;
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*endofCSS

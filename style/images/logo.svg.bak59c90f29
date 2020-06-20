@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PayloadInfo version="3.0.106.0">
+  <BuildInfo>
+    <Property name="Created">2010-03-01 23:47:24.318000</Property>
+    <Property name="TargetName">AdobeJRECS5-mul</Property>
+    <Property name="ProcessorFamily">All</Property>
+  </BuildInfo>
+  <InstallerProperties>
+    <Property name="payloadType">SQLite</Property>
+    <Property name="AdobeCode">{E5DD149F-8370-48F9-A32C-2E3DC776CFFB}</Property>
+    <Property name="ProductName">JRE</Property>
+    <Property name="ProductVersion">1.6</Property>
+  </InstallerProperties>
+  <InstallDir>
+    <Platform isFixed="1" name="Default" folderName="">[SharedApplicationData]\Adobe\CS5\jre</Platform>
+  </InstallDir>
+  <Languages languageIndependent="1"/>
+  <Satisfies>
+    <ProductInfo>
+		<Family>CoreTech</Family>
+    <ProductName>AdobeJRE</ProductName>
+  <ProductVersion>1.6</ProductVersion>
+    </ProductInfo>
+  </Satisfies>
+  <Upgrades>
+    <AdobeCode>{997A0F06-7574-47ED-AE54-B3BBC225644B}</AdobeCode>
+    <AdobeCode>{0F53793E-2099-4EEC-B5C4-4D6D0FF4468F}</AdobeCode>
+    <AdobeCode>{B957BAE4-19D6-422D-A915-A47A44DAC971}</AdobeCode>
+    <AdobeCode>{C5269698-D568-4C7A-9571-68722D337AF0}</AdobeCode>
+    <AdobeCode>{F8771CC7-4D38-4F74-9754-7FE613F5C64A}</AdobeCode>
+    <AdobeCode>{3525A509-7A48-43D5-9937-7F2F555904D7}</AdobeCode>
+    <AdobeCode>{3CCC1CC1-B059-4CB3-8EAB-2FCEB4A6CD25}</AdobeCode>
+    <AdobeCode>{03D3987B-2D09-4330-828A-F10C54024049}</AdobeCode>
+    <AdobeCode>{CA9646FE-76CE-4F2D-9003-37B9854A5514}</AdobeCode>
+  </Upgrades>
+  <Channel enable="1" id="AdobeJRECS5-1.6">
+    <DisplayName>JRE</DisplayName>
+  </Channel>
+  <InstallDestinationMetadata relocatableSize="91127291" sysDriveSize="0"><Destination>
+      <Root>[INSTALLDIR]</Root>
+      <TotalSize>91127291</TotalSize>
+      <MaxPathComponent>/lib/deploy/jqs/ff/chrome/content\overlay.xul</MaxPathComponent>
+    </Destination>
+    <Assets>
+      <Asset flag="1" name="Assets1_1" size="91127291"/>
+    </Assets>
+  </InstallDestinationMetadata>
+  <ConflictingProcesses>
+	<Win32>
+	</Win32>
+</ConflictingProcesses>
+  <AddRemoveInfo>
+    <DisplayVersion>
+      <Value lang="sq_AL">1.6</Value>
+      <Value lang="ar_AE">1.6</Value>
+      <Value lang="be_BY">1.6</Value>
+      <Value lang="bg_BG">1.6</Value>
+      <Value lang="ca_ES">1.6</Value>
+      <Value lang="zh_CN">1.6</Value>
+      <Value lang="zh_TW">1.6</Value>
+      <Value lang="hr_HR">1.6</Value>
+      <Value lang="cs_CZ">1.6</Value>
+      <Value lang="da_DK">1.6</Value>
+      <Value lang="nl_NL">1.6</Value>
+      <Value lang="en_XC">1.6</Value>
+      <Value lang="en_XM">1.6</Value>
+      <Value lang="en_GB">1.6</Value>
+      <Value lang="en_US">1.6</Value>
+      <Value lang="et_EE">1.6</Value>
+      <Value lang="fi_FI">1.6</Value>
+      <Value lang="fr_FR">1.6</Value>
+      <Value lang="fr_XM">1.6</Value>
+      <Value lang="de_DE">1.6</Value>
+      <Value lang="el_GR">1.6</Value>
+      <Value lang="he_IL">1.6</Value>
+      <Value lang="hu_HU">1.6</Value>
+      <Value lang="hi_IN">1.6</Value>
+      <Value lang="is_IS">1.6</Value>
+      <Value lang="it_IT">1.6</Value>
+      <Value lang="ja_JP">1.6</Value>
+      <Value lang="ko_KR">1.6</Value>
+      <Value lang="lv_LV">1.6</Value>
+      <Value lang="lt_LT">1.6</Value>
+      <Value lang="mk_MK">1.6</Value>
+      <Value lang="nn_NO">1.6</Value>
+      <Value lang="no_NO">1.6</Value>
+      <Value lang="nb_NO">1.6</Value>
+      <Value lang="pl_PL">1.6</Value>
+      <Value lang="pt_BR">1.6</Value>
+      <Value lang="ro_RO">1.6</Value>
+      <Value lang="ru_RU">1.6</Value>
+      <Value lang="sh_YU">1.6</Value>
+      <Value lang="sk_SK">1.6</Value>
+      <Value lang="sl_SI">1.6</Value>
+      <Value lang="es_QM">1.6</Value>
+      <Value lang="es_ES">1.6</Value>
+      <Value lang="sv_SE">1.6</Value>
+      <Value lang="th_TH">1.6</Value>
+      <Value lang="tr_TR">1.6</Value>
+      <Value lang="uk_UA">1.6</Value>
+      <Value lang="vi_VN">1.6</Value>
+      <Value lang="fr_CA">1.6</Value>
+      <Value lang="es_MX">1.6</Value>
+    </DisplayVersion>
+    <DisplayName>
+      <Value lang="sq_AL">JRE</Value>
+      <Value lang="ar_AE">JRE</Value>
+      <Value lang="be_BY">JRE</Value>
+      <Value lang="bg_BG">JRE</Value>
+      <Value lang="ca_ES">JRE</Value>
+      <Value lang="zh_CN">JRE</Value>
+      <Value lang="zh_TW">JRE</Value>
+      <Value lang="hr_HR">JRE</Value>
+      <Value lang="cs_CZ">JRE</Value>
+      <Value lang="da_DK">JRE</Value>
+      <Value lang="nl_NL">JRE</Value>
+      <Value lang="en_XC">JRE</Value>
+      <Value lang="en_XM">JRE</Value>
+      <Value lang="en_GB">JRE</Value>
+      <Value lang="en_US">JRE</Value>
+      <Value lang="et_EE">JRE</Value>
+      <Value lang="fi_FI">JRE</Value>
+      <Value lang="fr_FR">JRE</Value>
+      <Value lang="fr_XM">JRE</Value>
+      <Value lang="de_DE">JRE</Value>
+      <Value lang="el_GR">JRE</Value>
+      <Value lang="he_IL">JRE</Value>
+      <Value lang="hu_HU">JRE</Value>
+      <Value lang="hi_IN">JRE</Value>
+      <Value lang="is_IS">JRE</Value>
+      <Value lang="it_IT">JRE</Value>
+      <Value lang="ja_JP">JRE</Value>
+      <Value lang="ko_KR">JRE</Value>
+      <Value lang="lv_LV">JRE</Value>
+      <Value lang="lt_LT">JRE</Value>
+      <Value lang="mk_MK">JRE</Value>
+      <Value lang="nn_NO">JRE</Value>
+      <Value lang="no_NO">JRE</Value>
+      <Value lang="nb_NO">JRE</Value>
+      <Value lang="pl_PL">JRE</Value>
+      <Value lang="pt_BR">JRE</Value>
+      <Value lang="ro_RO">JRE</Value>
+      <Value lang="ru_RU">JRE</Value>
+      <Value lang="sh_YU">JRE</
